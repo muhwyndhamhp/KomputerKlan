@@ -3,7 +3,7 @@ package com.example.muhwyndham.komputerklan.model
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
 
-@Entity
+@Entity(tableName = "components")
 data class Component(
         @field:PrimaryKey
         val id: Int,
