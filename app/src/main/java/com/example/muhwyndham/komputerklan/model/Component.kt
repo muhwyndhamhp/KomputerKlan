@@ -1,9 +1,10 @@
 package com.example.muhwyndham.komputerklan.model
 
 import android.arch.persistence.room.Entity
+import android.arch.persistence.room.Index
 import android.arch.persistence.room.PrimaryKey
 
-@Entity(tableName = "components")
+@Entity(tableName = "components", indices = [Index(value = ["id"], unique = true)])
 data class Component(
         @field:PrimaryKey
         val id: Int,
